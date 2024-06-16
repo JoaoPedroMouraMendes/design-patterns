@@ -4,6 +4,8 @@ import factoryPattern.Product;
 import factoryPattern.ProductFactory;
 import prototypePattern.Button;
 import prototypePattern.ButtonRegistry;
+import proxyPattern.Calculator;
+import proxyPattern.CalculatorProxy;
 import singletonPattern.CalendarEAGER;
 import singletonPattern.CalendarEnum;
 
@@ -42,9 +44,12 @@ public class Main {
 //        System.out.println(calendar3.getDays());
 
 
-        Button redButton = ButtonRegistry.getButton("red");
-        redButton.setSize(20);
-        System.out.println(redButton);
-        System.out.println(ButtonRegistry.getButton("red"));
+//        Button redButton = ButtonRegistry.getButton("red");
+//        redButton.setSize(20);
+//        System.out.println(redButton);
+//        System.out.println(ButtonRegistry.getButton("red"));
+
+        CalculatorProxy calculator = new CalculatorProxy();
+        calculator.sum(1, 2);
     }
 }
