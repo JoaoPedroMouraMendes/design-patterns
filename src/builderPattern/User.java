@@ -1,4 +1,4 @@
-package User;
+package builderPattern;
 
 public class User {
     private String name;
