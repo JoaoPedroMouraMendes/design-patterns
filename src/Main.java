@@ -1,4 +1,7 @@
 import builderPattern.User;
+import factoryPattern.EnumProductType;
+import factoryPattern.Product;
+import factoryPattern.ProductFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +14,10 @@ public class Main {
 //
 //        System.out.println(user.toString());
 
+        Product product1 = ProductFactory.getInstance(EnumProductType.DIGITAL);
+        Product product2 = ProductFactory.getInstance(EnumProductType.PHYSICAL);
 
+        System.out.println(product1);
+        System.out.println(product2);
     }
 }
