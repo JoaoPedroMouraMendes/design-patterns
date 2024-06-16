@@ -2,6 +2,8 @@ import builderPattern.User;
 import factoryPattern.EnumProductType;
 import factoryPattern.Product;
 import factoryPattern.ProductFactory;
+import prototypePattern.Button;
+import prototypePattern.ButtonRegistry;
 import singletonPattern.CalendarEAGER;
 import singletonPattern.CalendarEnum;
 
@@ -40,6 +42,9 @@ public class Main {
 //        System.out.println(calendar3.getDays());
 
 
-
+        Button redButton = ButtonRegistry.getButton("red");
+        redButton.setSize(20);
+        System.out.println(redButton);
+        System.out.println(ButtonRegistry.getButton("red"));
     }
 }
