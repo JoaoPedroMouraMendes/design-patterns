@@ -1,3 +1,5 @@
+import adapterPattern.JarBankOperation;
+import adapterPattern.JarBankOperationAdapter;
 import builderPattern.User;
 import factoryPattern.EnumProductType;
 import factoryPattern.Product;
@@ -8,6 +10,8 @@ import proxyPattern.Calculator;
 import proxyPattern.CalculatorProxy;
 import singletonPattern.CalendarEAGER;
 import singletonPattern.CalendarEnum;
+
+import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,7 +53,12 @@ public class Main {
 //        System.out.println(redButton);
 //        System.out.println(ButtonRegistry.getButton("red"));
 
-        CalculatorProxy calculator = new CalculatorProxy();
-        calculator.sum(1, 2);
+
+//        CalculatorProxy calculator = new CalculatorProxy();
+//        calculator.sum(1, 2);
+
+
+        JarBankOperationAdapter bankOperationAdapter = new JarBankOperationAdapter(new JarBankOperation());
+        bankOperationAdapter.withdraw(new BigDecimal(100));
     }
 }
