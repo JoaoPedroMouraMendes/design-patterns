@@ -10,6 +10,10 @@ import proxyPattern.Calculator;
 import proxyPattern.CalculatorProxy;
 import singletonPattern.CalendarEAGER;
 import singletonPattern.CalendarEnum;
+import strategyPattern.AnnualAdjustment;
+import strategyPattern.Employee;
+import strategyPattern.EmployeeCLT;
+import strategyPattern.EmployeePJ;
 
 import java.math.BigDecimal;
 
@@ -58,7 +62,17 @@ public class Main {
 //        calculator.sum(1, 2);
 
 
-        JarBankOperationAdapter bankOperationAdapter = new JarBankOperationAdapter(new JarBankOperation());
-        bankOperationAdapter.withdraw(new BigDecimal(100));
+//        JarBankOperationAdapter bankOperationAdapter = new JarBankOperationAdapter(new JarBankOperation());
+//        bankOperationAdapter.withdraw(new BigDecimal(100));
+
+
+        EmployeeCLT jhon = new EmployeeCLT("jhon", 2000d);
+        EmployeePJ julian = new EmployeePJ("julian", 2000d);
+
+        AnnualAdjustment.salaryAdjustment(jhon);
+        AnnualAdjustment.salaryAdjustment(julian);
+
+        System.out.println(jhon);
+        System.out.println(julian);
     }
 }
