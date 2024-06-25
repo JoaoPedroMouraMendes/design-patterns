@@ -66,13 +66,13 @@ public class Main {
 //        bankOperationAdapter.withdraw(new BigDecimal(100));
 
 
-        EmployeeCLT jhon = new EmployeeCLT("jhon", 2000d);
-        EmployeePJ julian = new EmployeePJ("julian", 2000d);
-
-        AnnualAdjustment.salaryAdjustment(jhon);
-        AnnualAdjustment.salaryAdjustment(julian);
-
-        System.out.println(jhon);
-        System.out.println(julian);
+//        EmployeeCLT jhon = new EmployeeCLT("jhon", 2000d);
+//        EmployeePJ julian = new EmployeePJ("julian", 2000d);
+//
+//        AnnualAdjustment.salaryAdjustment(jhon);
+//        AnnualAdjustment.salaryAdjustment(julian);
+//
+//        System.out.println(jhon);
+//        System.out.println(julian);
     }
 }

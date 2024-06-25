@@ -1,5 +1,5 @@
 package strategyPattern;
 
 public interface SalaryAdjustment {
-    public void salaryAdjustmen();
+    public void salaryAdjustment();
 }

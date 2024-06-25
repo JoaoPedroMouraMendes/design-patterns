@@ -7,7 +7,7 @@ public class EmployeeCLT extends Employee implements SalaryAdjustment {
     }
 
     @Override
-    public void salaryAdjustmen() {
+    public void salaryAdjustment() {
         salary += salary * 0.1f;
     }
 }

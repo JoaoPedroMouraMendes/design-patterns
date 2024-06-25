@@ -6,7 +6,7 @@ public class EmployeePJ extends Employee implements SalaryAdjustment {
     }
 
     @Override
-    public void salaryAdjustmen() {
+    public void salaryAdjustment() {
         salary += salary * 0.05f;
     }
 }
